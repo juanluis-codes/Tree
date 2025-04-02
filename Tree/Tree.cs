@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tree
 {
-    class Tree
+    public class Tree
     {
         public Node Root { get; set; }
         public Tree(Node root)

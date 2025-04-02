@@ -12,7 +12,7 @@ namespace BinaryTree
         {
         }
 
-        public void AddOrderedNodes(Node node)
+        public void AddNode(Node node)
         {
             if (node == null)
             {
