@@ -11,4 +11,8 @@
     <ProjectReference Include="..\Tree\Tree.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BinaryTree\BinaryTree.csproj" />
+  </ItemGroup>
+
 </Project>
