@@ -41,15 +41,29 @@
         {
             if (node.Left != null)
             {
-                TraversePreOrder(node.Left);
+                TraverseInOrder(node.Left);
             }
 
             Console.WriteLine(node.Value);
 
             if (node.Right != null)
             {
-                TraversePreOrder(node.Right);
+                TraverseInOrder(node.Right);
             }
+        }
+
+        public void TraversePostOrder(Node node)
+        {
+            if (node.Left != null)
+            {
+                TraversePostOrder(node.Left);
+            }
+            if (node.Right != null)
+            {
+                TraversePostOrder(node.Right);
+            }
+
+            Console.WriteLine(node.Value);
         }
 
         public void TraverseBreadthFirst(Node node)

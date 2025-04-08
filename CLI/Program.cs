@@ -62,7 +62,7 @@ binarySearchTree.AddNode(binarySearchChild5);
 binarySearchTree.AddNode(binarySearchChild6);
 binarySearchTree.AddNode(binarySearchChild7);
 
-binarySearchTree.TraversePreOrder(binarySearchRoot);
+binarySearchTree.TraverseInOrder(binarySearchRoot);
 Console.WriteLine();
 binarySearchTree.TraverseBreadthFirst(binarySearchRoot);
 

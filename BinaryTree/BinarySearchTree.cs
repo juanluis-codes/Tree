@@ -23,6 +23,12 @@ namespace BinaryTree
 
             while (true)
             {
+                if (node.Value == current.Value)
+                {
+                    Console.WriteLine("Node already exists in the tree.");
+                    return;
+                }
+
                 if (node.Value < current.Value)
                 {
                     if (current.Left == null)
