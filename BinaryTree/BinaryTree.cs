@@ -23,17 +23,17 @@
             node.Father = parent;
         }
 
-        public void Traverse(Node node)
+        public void TraversePreOrder(Node node)
         {
             Console.WriteLine(node.Value);
             if (node.Left != null)
             {
-                Traverse(node.Left);
+                TraversePreOrder(node.Left);
             }
 
             if (node.Right != null)
             {
-                Traverse(node.Right);
+                TraversePreOrder(node.Right);
             }
         }
 

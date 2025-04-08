@@ -14,7 +14,7 @@ Tree.Node treeChild5 = new Tree.Node(8, treeChild2);
 Tree.Node treeChild6 = new Tree.Node(9, treeChild2);
 
 Tree.Tree tree = new Tree.Tree(treeRoot);
-tree.Traverse(treeRoot);
+tree.TraversePreOrder(treeRoot);
 Console.WriteLine();
 tree.TraverseBreadthFirst(treeRoot);
 
@@ -38,7 +38,33 @@ binaryTree.AddNode(binaryChild5, binaryChild4, true);
 binaryTree.AddNode(binaryChild6, binaryChild4, false);
 binaryTree.AddNode(binaryChild7, binaryChild6, false);
 
-binaryTree.Traverse(binaryRoot);
+binaryTree.TraversePreOrder(binaryRoot);
 Console.WriteLine();
 binaryTree.TraverseBreadthFirst(binaryRoot);
+
+Console.WriteLine("Binary Search Tree");
+
+BinaryTree.Node binarySearchRoot = new BinaryTree.Node(30);
+BinaryTree.Node binarySearchChild1 = new BinaryTree.Node(4);
+BinaryTree.Node binarySearchChild2 = new BinaryTree.Node(7);
+BinaryTree.Node binarySearchChild3 = new BinaryTree.Node(33);
+BinaryTree.Node binarySearchChild4 = new BinaryTree.Node(55);
+BinaryTree.Node binarySearchChild5 = new BinaryTree.Node(67);
+BinaryTree.Node binarySearchChild6 = new BinaryTree.Node(42);
+BinaryTree.Node binarySearchChild7 = new BinaryTree.Node(8);
+
+BinaryTree.BinarySearchTree binarySearchTree = new(binarySearchRoot);
+binarySearchTree.AddNode(binarySearchChild1);
+binarySearchTree.AddNode(binarySearchChild2);
+binarySearchTree.AddNode(binarySearchChild3);
+binarySearchTree.AddNode(binarySearchChild4);
+binarySearchTree.AddNode(binarySearchChild5);
+binarySearchTree.AddNode(binarySearchChild6);
+binarySearchTree.AddNode(binarySearchChild7);
+
+binarySearchTree.TraversePreOrder(binarySearchRoot);
+Console.WriteLine();
+binarySearchTree.TraverseBreadthFirst(binarySearchRoot);
+
+
 

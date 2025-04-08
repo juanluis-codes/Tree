@@ -14,12 +14,12 @@ namespace Tree
             Root = root;
         }
 
-        public void Traverse(Node node)
+        public void TraversePreOrder(Node node)
         {
             Console.WriteLine(node.Value);
             foreach (var child in node.Children)
             {
-                Traverse(child);
+                TraversePreOrder(child);
             }
         }
 
