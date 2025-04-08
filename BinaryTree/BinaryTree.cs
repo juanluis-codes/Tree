@@ -37,6 +37,21 @@
             }
         }
 
+        public void TraverseInOrder(Node node)
+        {
+            if (node.Left != null)
+            {
+                TraversePreOrder(node.Left);
+            }
+
+            Console.WriteLine(node.Value);
+
+            if (node.Right != null)
+            {
+                TraversePreOrder(node.Right);
+            }
+        }
+
         public void TraverseBreadthFirst(Node node)
         {
             Queue<Node> queue = new Queue<Node>();
