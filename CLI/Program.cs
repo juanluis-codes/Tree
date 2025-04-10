@@ -42,6 +42,21 @@ binaryTree.TraversePreOrder(binaryRoot);
 Console.WriteLine();
 binaryTree.TraverseBreadthFirst(binaryRoot);
 
+Console.WriteLine();
+
+binaryTree.RemoveNode(binaryChild4);
+
+//binaryTree.TraversePreOrder(binaryRoot);
+//Console.WriteLine();
+//binaryTree.TraverseBreadthFirst(binaryRoot);
+//Console.WriteLine(binaryRoot.ToString());
+//Console.WriteLine(binaryChild1.ToString());
+//Console.WriteLine(binaryChild2.ToString());
+//Console.WriteLine(binaryChild3.ToString());
+//Console.WriteLine(binaryChild5.ToString());
+//Console.WriteLine(binaryChild6.ToString());
+//Console.WriteLine(binaryChild7.ToString());
+
 Console.WriteLine("Binary Search Tree");
 
 BinaryTree.Node binarySearchRoot = new BinaryTree.Node(30);
